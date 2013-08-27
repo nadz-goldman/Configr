@@ -1,0 +1,43 @@
+##########################################
+##########################################
+##
+##  Switches, blin nafig
+##
+##########################################
+##########################################
+
+define host{
+	use 		generic-switch
+	host_name	SW-253.102
+	alias		Dlink DES-1228/ME
+	address		10.0.253.102
+	parents         SW-253.100
+	hostgroups	switches
+	icon_image	ico/SWITCH.png
+	statusmap_image ico/SWITCH.png
+}
+
+define host{
+	use 		generic-switch
+	host_name	SW-253.104
+	alias		Dlink DES-1228/ME
+	address		10.0.253.104
+	parents         SW-253.100
+	hostgroups	switches
+	icon_image	ico/SWITCH.png
+	statusmap_image ico/SWITCH.png
+}
+
+
+
+define host{
+	use 		generic-switch
+	host_name	SW-253.100
+	alias		Dlink DGS3100
+	address		10.0.253.100
+	hostgroups	switches
+	icon_image	ico/SWITCH.png
+	statusmap_image ico/SWITCH.png
+}
+
+
