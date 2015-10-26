@@ -99,8 +99,7 @@ sub usage{
     main.pl -f PathToConfigurationFile       Read configuration file
             -h                               This help
             -v                               Version
-    
-    ";
+	\n";
     exit;
 }
 
